@@ -33,6 +33,13 @@
             <div class="forms_field">
               <input type="password" placeholder="Password" class="forms_field-input" name="password-l" required />
             </div>
+            <div class="forms_field">
+                <input type="text" placeholder="验证码" class="forms_code-input" name="code" required />
+                <span class="code-show">
+                    <img id="codeimg" alt="验证码错误" height="25px" src="https://authserver.swufe.edu.cn/authserver/getCaptcha.htl?1722224475280">
+                    <a class="mask-inner code-refresh" onclick="" href="">刷新</a>
+                </span>
+            </div>
           </fieldset>
           <div class="forms_buttons">
             <input type="submit" value="Log In" class="forms_buttons-action">

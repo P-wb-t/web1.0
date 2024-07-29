@@ -36,13 +36,12 @@
             <div class="forms_field">
                 <input type="text" placeholder="验证码" class="forms_code-input" name="code" required />
                 <span class="code-show">
-                    <img id="codeimg" alt="验证码错误" height="25px" src="https://authserver.swufe.edu.cn/authserver/getCaptcha.htl?1722224475280">
-                    <a class="mask-inner code-refresh" onclick="" href="">刷新</a>
+                    <canvas id="codeimg"  width="90" height="40"></canvas>
                 </span>
             </div>
           </fieldset>
           <div class="forms_buttons">
-            <input type="submit" value="Log In" class="forms_buttons-action">
+            <input type="submit" value="Log In" class="forms_buttons-action-log">
           </div>
         </form>
       </div>
@@ -61,7 +60,7 @@
             </div>
           </fieldset>
           <div class="forms_buttons">
-            <input type="submit" value="Sign up" class="forms_buttons-action">
+            <input type="submit" value="Sign up" class="forms_buttons-action-reg">
           </div>
         </form>
       </div>
@@ -69,6 +68,34 @@
   </div>
 </section>
 <script src="/static/js/log-reg.js"></script>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="/static/js/code.js"></script>
+<script>
+    $(function (){
+        code_draw();
+        $("#codeimg").on('click',function (){
+            code_draw();
+        })
+        $('.forms_buttons-action-log').on('click',function (){
+            var val = $(".forms_code-input").val().toLowerCase();
+            var num = $('#codeimg').attr('data-code');
+            if (val == num){
+                alert('提交成功！');
+                $('.forms_buttons-action-log').val('');
+                draw(show_num);
+            }
+            else if (val == ''){
+                $(".input-val").val('');
+                draw(show_num);
+            }
+            else{
+                alert('验证码错误！请重新输入！');
+                $(".input-val").val('');
+                draw(show_num);
+            }       <!--这里填写错误点击确认后也会直接进入主页，结合登录页面的后端进行验证-->
+        })
+    })
+</script>
 </body>
 </html>
 

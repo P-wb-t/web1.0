@@ -56,3 +56,4 @@ function code_randomColor() { //得到随机的颜色值
 	var b = Math.floor(Math.random() * 256);
 	return "rgb(" + r + "," + g + "," + b + ")";
 }
+

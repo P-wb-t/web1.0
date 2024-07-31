@@ -223,6 +223,8 @@ input::placeholder {
   border: 1px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
+  width: 90px;
+  height: 40px;
 }
 /*.code-show:hover .mask-inner {*/
 /*  display: block;*/

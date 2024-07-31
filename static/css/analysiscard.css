@@ -1,0 +1,306 @@
+.logoshow{
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+  margin-top: 100px;
+}
+.logoimg{
+  border-radius: 16px;
+  box-shadow: 0 0 24px 0 rgba(88, 90, 115, .12);
+  margin-right: 20px;
+  margin-top: 4px;
+  width: 100px;
+  object-fit: contain;
+}
+.slogan{
+  color: rgba(0, 0, 0, 0.53);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 50px;
+  font-family: "Courier New";
+}
+.slogan-t{
+  color: lightslategray;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 40px;
+  font-family: "Courier New";
+}
+.analysis-area{
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+  align-items: center;
+  margin-top: 100px;
+  flex-direction: row;
+}
+/*上传*/
+.file-upload-form{
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 150px;
+}
+
+.file-upload-label input {
+  display: none;
+}
+.file-upload-label svg {
+  height: 100px;
+  fill: rgba(82, 82, 82, 0.73);
+  margin-bottom: 20px;
+}
+.file-upload-label{
+  cursor: pointer;
+  background:linear-gradient(to bottom, rgba(143, 148, 128, 0.23) 0%, rgba(115, 150, 190, 0.32) 50%, rgba(182, 222, 222, 0.28) 100%);
+  padding: 30px 70px;
+  border-radius: 40px;
+  border: 2px dashed rgba(15, 71, 105, 0.89);
+  box-shadow: 0px 0px 200px -50px rgba(9, 7, 61, 0.6);
+  width: 400px;
+  height: 400px;
+}
+.file-upload-design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.file-upload-design p{
+  font-family: 微软雅黑;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.61);
+  font-weight: 400;
+  line-height: 40px;
+}
+.button_bro{
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+  align-items: center;
+  margin-top: 5px;
+  flex-direction: row;
+}
+.browse-button, .upload-button {
+  background-color: rgba(0, 9, 14, 0.6);
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  transition: all 0.3s;
+  height: 50px;
+  font-size: 22px;
+}
+.browse-button{
+  margin-right: 20px;
+}
+.browse-button:hover, .upload-button:hover {
+  background-color: rgb(14, 14, 14);
+}
+.model-download-form {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.model-download-label {
+  width: 400px;
+  height: 400px;
+  cursor: pointer;
+  background:linear-gradient(to bottom, rgba(143, 148, 128, 0.23) 0%, rgba(115, 150, 190, 0.32) 50%, rgba(182, 222, 222, 0.28) 100%);
+  padding: 30px 70px;
+  border-radius: 40px;
+  border: 2px dashed rgba(15, 71, 105, 0.89);
+  box-shadow: 0px 0px 200px -50px rgba(9, 7, 61, 0.6);
+}
+.model-download-label p{
+  font-family: 微软雅黑;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.61);
+  font-weight: 400;
+  line-height: 40px;
+  margin-top: 80px;
+}
+/*下载按钮*/
+.download-button-label {
+  background-color: rgba(0, 9, 14, 0.32);
+  border: 8px solid rgba(21, 61, 140, 0.43);
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  width: 250px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  padding: 5px;
+  position: relative;
+  margin-top: 80px;
+}
+.download-button-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  width: 8px;
+  height: 8px;
+  transition: all 0.4s ease;
+  border-radius: 100%;
+  margin: auto;
+  opacity: 0;
+  visibility: hidden;
+}
+.download-button-label .input {
+  display: none;
+}
+.download-button-label .title {
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  font-family: "微软雅黑 Light";
+  font-weight: 600;
+  left: 70px;
+  bottom: -14px;
+  transition: all 0.4s ease;
+  position: absolute;
+  text-align: center;
+}
+.download-button-label .title:last-child {
+  opacity: 0;
+  visibility: hidden;
+}
+.download-button-label .circle {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: rgba(21, 61, 140, 0.43);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+  position: relative;
+  box-shadow: 0 0 0 0 rgb(255, 255, 255);
+  overflow: hidden;
+}
+.download-button-label .circle .icon {
+  color: #fff;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease;
+}
+.download-button-label .circle .square {
+  aspect-ratio: 1;
+  width: 15px;
+  border-radius: 2px;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease;
+}
+.download-button-label .circle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(21, 61, 140, 0.43);
+  width: 100%;
+  height: 0;
+  transition: all 0.4s ease;
+}
+.download-button-label:has(.input:checked) {
+  width: 57px;
+  animation: installed 0.4s ease 3.5s forwards;
+}
+.download-button-label:has(.input:checked)::before {
+  animation: rotate 3s ease-in-out 0.4s forwards;
+}
+.download-button-label .input:checked + .circle {
+  animation: pulse 1s forwards, circleDelete 0.2s ease 3.5s forwards;
+  rotate: 180deg;
+}
+.download-button-label .input:checked + .circle::before {
+  animation: installing 3s ease-in-out forwards;
+}
+.download-button-label .input:checked + .circle .icon {
+  opacity: 0;
+  visibility: hidden;
+}
+.download-button-label .input:checked ~ .circle .square {
+  opacity: 1;
+  visibility: visible;
+}
+.download-button-label .input:checked ~ .title {
+  opacity: 0;
+  visibility: hidden;
+}
+.download-button-label .input:checked ~ .title:last-child {
+  animation: showInstalledMessage 0.4s ease 3.5s forwards;
+}
+@keyframes pulse {
+  0% {
+    scale: 0.95;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    scale: 1;
+    box-shadow: 0 0 0 16px rgba(255, 255, 255, 0);
+  }
+  100% {
+    scale: 0.95;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+@keyframes installing {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-90deg) translate(27px) rotate(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  99% {
+    transform: rotate(270deg) translate(27px) rotate(270deg);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes installed {
+  100% {
+    width: 150px;
+    border-color: rgba(35, 174, 35, 0.2);
+  }
+}
+@keyframes circleDelete {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes showInstalledMessage {
+  100% {
+    opacity: 1;
+    visibility: visible;
+    right: 56px;
+  }
+}

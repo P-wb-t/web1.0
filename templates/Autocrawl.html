@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <title>Slogan | Autocrawl</title>
     <link rel="stylesheet" href="/static/css/main.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/c/font_4635473_2foxw6wmwxr.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/c/font_4635473_soaxie3puys.css">
     <link rel="stylesheet" href="/static/css/autocrawl.css">
     <script src="/js/logout.js"></script>  <!--左下角展示用户信息-->
+    <script src="/js/exmple-list.js"></script>  <!--分页列表-->
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
 
 </head>
 <body>
@@ -17,15 +19,15 @@
         <div class="card">
         <div class="heading">Join <span>Us</span></div>
         <div class="content">
-            <a href="pdf analysis.html" >
+            <a href="PDFAnalysis.html" >
             <div class="item item--home item--top">
-                <i style="font-size: 25px" class="iconfont icon-zhuye"></i>
+                <i style="font-size: 25px" class="iconfont icon-PDF"></i>
                 <span>PDF <br>analysis</span>
             </div>
             </a>
             <a href="Autocrawl.html">
             <div class="item item--contact item--top">
-                <i style="font-size: 30px" class="iconfont icon-yuwolianxi"></i>
+                <i style="font-size: 30px" class="iconfont icon-wangluopaqu"></i>
                 <span>Autocrawl</span>
             </div>
             </a>
@@ -69,53 +71,123 @@
                      <p class="title">Open</p>
                </label>
            </div>
-           <div class="itemcard">
-                <div class="cardbox">
-                    <div class="card-content">
-                        <div class="titlebox">
-                            <div class="card-title">Title1</div>
-                        </div>
-                        <div class="textbox">
-                            <div class="card-text">你擅长写藏头诗：1. 巧妙将输入的字放在每句的开头；2. 诗句要押韵。3. 语义要连贯，诗题：我爱李华</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardbox">
-                    <div class="card-content">
-                        <div class="titlebox">
-                            <div class="card-title">Title2</div>
-                        </div>
-                        <div class="textbox">
-                            <div class="card-text">你擅长写藏头诗：1. 巧妙将输入的字放在每句的开头；2. 诗句要押韵。3. 语义要连贯，诗题：我爱李华</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardbox">
-                    <div class="card-content">
-                        <div class="titlebox">
-                            <div class="card-title">Title3</div>
-                        </div>
-                        <div class="textbox">
-                            <div class="card-text">你擅长写藏头诗：1. 巧妙将输入的字放在每句的开头；2. 诗句要押韵。3. 语义要连贯，诗题：我爱李华</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardbox">
-                    <div class="card-content">
-                        <div class="titlebox">
-                            <div class="card-title">Title4</div>
-                        </div>
-                        <div class="textbox">
-                            <div class="card-text">你擅长写藏头诗：1. 巧妙将输入的字放在每句的开头；2. 诗句要押韵。3. 语义要连贯，诗题：我爱李华</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           <div class="example-list-area">
+               <div class="file_list">
+                   <table class="table-container">
+                   <tbody>
+                      <tr id="table_container_head">
+                          <th sortable="undefined" index="undefined" id="defaultRank" desc="序号">序号</th>
+                          <th sortable="undefined" index="undefined" id="companyName" desc="发行人">公司</th>
+                          <th sortable="undefined" index="undefined" id="fileTitle" desc="文件名称">文件名称</th>
+                          <th sortable="undefined" index="undefined" id="fileUpdTime" desc="披露日期">披露日期</th>
+                      </tr>
+                      <tr class="tr_odd data">
+                          <td valign="" class=" text-align-center">1</td>
+                          <td valign="" class=" text-align-center td_no_break">上海友升铝业股份有限公司</td>
+                          <td valign="" class="td_break_word_5 "><a href="#" target="_blank">8-1 发行人及中介机构关于第一轮审核问询函的回复</a></td>
+                          <td valign="" class=" text-align-center td_no_break">2024-07-26</td>
+                      </tr>
+                      <tr class="tr_even data"><td valign="" class=" text-align-center">2</td>
+                          <td valign="" class=" text-align-center td_no_break">思看科技（杭州）股份有限公司</td>
+                          <td valign="" class="td_break_word_5 "><a href="#" target="_blank">思看科技（杭州）股份有限公司科创板首次公开发行股票招股说明书（上会稿）</a></td>
+                          <td valign="" class=" text-align-center td_no_break">2024-07-26</td>
+                      </tr>
+                      <tr class="tr_odd data">
+                          <td valign="" class=" text-align-center">3</td>
+                          <td valign="" class=" text-align-center td_no_break">上海友升铝业股份有限公司</td>
+                          <td valign="" class="td_break_word_5 "><a href="#" target="_blank">8-1 发行人及中介机构关于第一轮审核问询函的回复</a></td>
+                          <td valign="" class=" text-align-center td_no_break">2024-07-26</td>
+                      </tr>
+                      <tr class="tr_even data"><td valign="" class=" text-align-center">4</td>
+                          <td valign="" class=" text-align-center td_no_break">思看科技（杭州）股份有限公司</td>
+                          <td valign="" class="td_break_word_5 "><a href="#" target="_blank">思看科技（杭州）股份有限公司科创板首次公开发行股票招股说明书（上会稿）</a></td>
+                          <td valign="" class=" text-align-center td_no_break">2024-07-26</td>
+                      </tr>
+                      <tr class="tr_odd data">
+                          <td valign="" class=" text-align-center">5</td>
+                          <td valign="" class=" text-align-center td_no_break">上海友升铝业股份有限公司</td>
+                          <td valign="" class="td_break_word_5 "><a href="#" target="_blank">8-1 发行人及中介机构关于第一轮审核问询函的回复</a></td>
+                          <td valign="" class=" text-align-center td_no_break">2024-07-26</td>
+                      </tr>
+                      <tr class="tr_even data"><td valign="" class=" text-align-center">6</td>
+                          <td valign="" class=" text-align-center td_no_break">思看科技（杭州）股份有限公司</td>
+                          <td valign="" class="td_break_word_5 "><a href="#" target="_blank">思看科技（杭州）股份有限公司科创板首次公开发行股票招股说明书（上会稿）</a></td>
+                          <td valign="" class=" text-align-center td_no_break">2024-07-26</td>
+                      </tr>
+                      <tr class="tr_odd data">
+                          <td valign="" class=" text-align-center">7</td>
+                          <td valign="" class=" text-align-center td_no_break">上海友升铝业股份有限公司</td>
+                          <td valign="" class="td_break_word_5 "><a href="#" target="_blank">8-1 发行人及中介机构关于第一轮审核问询函的回复</a></td>
+                          <td valign="" class=" text-align-center td_no_break">2024-07-26</td>
+                      </tr>
+                      <tr class="tr_even data"><td valign="" class=" text-align-center">8</td>
+                          <td valign="" class=" text-align-center td_no_break">思看科技（杭州）股份有限公司</td>
+                          <td valign="" class="td_break_word_5 "><a href="#" target="_blank">思看科技（杭州）股份有限公司科创板首次公开发行股票招股说明书（上会稿）</a></td>
+                          <td valign="" class=" text-align-center td_no_break">2024-07-26</td>
+                      </tr>
+                      <tr class="tr_odd data">
+                          <td valign="" class=" text-align-center">9</td>
+                          <td valign="" class=" text-align-center td_no_break">上海友升铝业股份有限公司</td>
+                          <td valign="" class="td_break_word_5 "><a href="#" target="_blank">8-1 发行人及中介机构关于第一轮审核问询函的回复</a></td>
+                          <td valign="" class=" text-align-center td_no_break">2024-07-26</td>
+                      </tr>
+                      <tr class="tr_even data"><td valign="" class=" text-align-center">10</td>
+                          <td valign="" class=" text-align-center td_no_break">思看科技（杭州）股份有限公司</td>
+                          <td valign="" class="td_break_word_5 "><a href="#" target="_blank">思看科技（杭州）股份有限公司科创板首次公开发行股票招股说明书（上会稿）</a></td>
+                          <td valign="" class=" text-align-center td_no_break">2024-07-26</td>
+                      </tr>
+                   </tbody>
+               </table>
+               </div>
+               <div class="example-list-pagination">
+                   <div class="pages">
+                       <span class="paging_text">
+                           <span class="paging_num_on">1</span>
+                           <a class="dataList_container_paginationNumLink  pagea" href="#" pageno="2">2</a>
+                           <a class="dataList_container_paginationNumLink  pagea" href="#" pageno="3">3</a>
+                           <a class="dataList_container_paginationNumLink  pagea" href="#" pageno="4">4</a>
+                           <a class="dataList_container_paginationNumLink  pagea" href="#" pageno="5">5</a>
+                           <a class="dataList_container_paginationNumLink  pagea" href="#" pageno="6">6</a>
+                           <span class="page-break">...</span>
+                           <a class="paging_next" title="下页" href="javascript:void(0)" id="dataList_container_next" pageno="2"> <span>下一页 </span> </a>
+                       </span>
+                   </div>
+               </div>
+           </div>
         </div>
     </div>
 </section>
+<script>
+  $(function() {
+    // 清除现有内容
+    $('.pages').empty();
 
+    // 示例数据
+    var options = {
+      pageCount: 10, // 总页数
+      pageIndex: 1, // 当前页数
+      pageLength: 5, // 分页长度
+      headerKeep: 2, // 头部预留页码
+      footerKeep: 2, // 尾部预留页码
+      tagStr: 'a', // 标签类型
+      classStr: 'dataList_container_paginationNumLink pagea', // 标签类名
+      idStr: '', // 标签id
+      nameStr: 'page', // 标签名
+      disable: 'page-disabled', // 禁用类
+      active: 'paging_num_on', // 选中类
+      extClass: 'dataList_container_paginationNumLink', // 额外类
+      isStatic: true, // 是否静态分页
+      pageName: 'example', // 页面名称
+      pageExt: '.html', // 页面扩展名
+      tagStr2: 'span', // 另一个标签类型
+      paging_text: '<span class="paging_text">', // 包装文本
+      paging_text_end: '</span>' // 结束包装文本
+    };
 
-
+    // 调用分页函数
+    getPage({pageType: 'WCM', ...options});
+  });
+</script>
 </body>
 </html>
+
